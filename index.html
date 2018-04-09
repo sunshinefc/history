@@ -1,0 +1,306 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>历史朝代</title>
+
+<link rel="stylesheet" href="css/style.css">
+<style>
+p{
+color:#fff;
+font-size:15px;
+text-shadow: 0 0 10px #529DFF;
+}
+.dynasty span{
+  display:block;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: center;
+}
+.txt_events strong:hover {
+  cursor: pointer;
+}
+.events_list .tab{
+  width: 400px;
+  height: 150px;
+  background: #fff;
+  border-radius: 50px;
+  /*opacity: 0;*/
+  display: none;
+  font-size: 16px;
+  line-height: 24px;
+  padding-top: 14px;
+  padding-left: 14px;
+}
+.events_list .tab span{
+  display: block;
+  text-align: left;
+}
+.events_list .right_li .tab{
+  margin-left: 150px;
+}
+</style>
+
+</head>
+<body>
+
+<div class="wrap about_page" id="wrap">
+  <div class="wrapper">
+    <div class="header">
+      <div class="head">
+	  
+          <div class="nav_box">
+            <ul class="nav_list" id="nav_list">
+		 <li><a href="javascript:void(0);" onclick="play()" id="playbtn" class="btn_sound"></a></li>
+            </ul>
+            <span class="ic_line" id="h_line"></span>
+          </div>
+      </div>
+    </div>
+    <div class="events_sec" id="events_sec">
+      <div class="content">
+        <h3 class="hide_txt png">朝代</h3>
+        <div class="events_list">
+          <span class="ic_time png"></span>
+          <ul>
+            <li class="right_li">
+              <span class="ic_events png"></span>
+              <p class="txt_events"><strong>夏商</strong></p>
+              <div class="tab">
+                <span class="time">时间：夏朝(约公元前2070~1600年)  商朝(约公元前1600~1046年)</span>
+                <span class="capital">首都：</span>
+                <span class="person">代表人物：</span>
+                <span class="story">典故：</span>
+              </div>
+            </li>
+            <li class="left_li">
+              <span class="ic_events"><i class="png"></i></span>
+              <p class="txt_events"><strong>西周</strong></p>
+              <div class="tab">
+                <span class="time">时间：前1046年-前771年</span>
+                <span class="capital">首都：镐京(宗周)</span>
+                <span class="person">代表人物：</span>
+                <span class="story">典故：</span>
+              </div>
+            </li>
+            <li class="right_li">
+              <span class="ic_events png"></span>
+              <p class="txt_events"><strong>东周</strong></p>
+              <div class="tab">
+                <span class="time">时间：前770年-前256年</span>
+                <span class="capital">首都：雒邑(成周)</span>
+                <span class="person">代表人物：</span>
+                <span class="story">典故：</span>
+              </div>
+            </li>
+            <li class="left_li">
+              <span class="ic_events"><i class="png"></i></span>
+              <p class="txt_events"><strong>春秋</strong></p>
+              <div class="tab">
+                <span class="time">时间：公元前770年-前476年</span>
+                <span class="capital">首都：</span>
+                <span class="person">代表人物：老子、孔子、孙子、鬼谷子、墨子</span>
+                <span class="story">典故：1、春秋五霸：齐桓公、晋文公、宋襄公、秦穆公、楚庄王
+                （齐桓公、楚庄王、晋文公、吴王阖闾、越王勾践）</span>
+              </div>
+            </li>
+            <li class="right_li">
+              <span class="ic_events png"></span>
+              <p class="txt_events"><strong>战国</strong></p>
+              <div class="tab">
+                <span class="time">时间：公元前475年~前221年</span>
+                <span class="capital">首都：</span>
+                <span class="person">代表人物：</span>
+                <span class="story">典故：1、战国七雄：齐、楚、燕、韩、赵、魏、秦</span>
+              </div>
+            </li>
+            <li class="left_li">
+              <span class="ic_events"><i class="png"></i></span>
+              <p class="txt_events"><strong>秦</strong></p>
+              <div class="tab">
+                <span class="time">时间：前221年至前207年</span>
+                <span class="capital">首都：咸阳</span>
+                <span class="person">代表人物：秦始皇、秦二世</span>
+                <span class="story">典故：</span>
+              </div>
+            </li>
+            <li class="right_li">
+              <span class="ic_events png"></span>
+              <p class="txt_events"><strong>汉</strong></p>
+              <div class="tab">
+                <span class="time">时间：前202年－220年</span>
+                <span class="capital">首都：长安(西汉)、洛阳(东汉)</span>
+                <span class="person">代表人物：</span>
+                <span class="story">典故：昭君出塞、张骞出使西域</span>
+              </div>
+            </li>
+            <li class="left_li">
+              <span class="ic_events"><i class="png"></i></span>
+              <p class="txt_events"><strong>魏</strong></p>
+              <div class="tab">
+                <span class="time">时间：三国 公元220~280年</span>
+                <span class="capital">首都：</span>
+                <span class="person">代表人物：</span>
+                <span class="story">典故：</span>
+              </div>
+            </li>
+            <li class="right_li">
+              <span class="ic_events png"></span>
+              <p class="txt_events"><strong>蜀</strong></p>
+              <div class="tab">
+                <span class="time">时间：三国 公元220~280年</span>
+                <span class="capital">首都：</span>
+                <span class="person">代表人物：</span>
+                <span class="story">典故：</span>
+              </div>
+            </li>
+            <li class="left_li">
+              <span class="ic_events"><i class="png"></i></span>
+              <p class="txt_events"><strong>吴</strong></p>
+              <div class="tab">
+                <span class="time">时间：三国 公元220~280年</span>
+                <span class="capital">首都：</span>
+                <span class="person">代表人物：</span>
+                <span class="story">典故：</span>
+              </div>
+            </li>
+            <li class="right_li">
+              <span class="ic_events png"></span>
+              <p class="txt_events"><strong>晋</strong></p>
+              <div class="tab">
+                <span class="time">时间：公元265~420年</span>
+                <span class="capital">首都：洛阳、建康</span>
+                <span class="person">代表人物：</span>
+                <span class="story">典故：</span>
+              </div>
+            </li>
+            <li class="left_li">
+              <span class="ic_events"><i class="png"></i></span>
+              <p class="txt_events"><strong>南北朝</strong></p>
+              <div class="tab">
+                <span class="time">时间：公元420~589年 南朝(420年-589年) 北朝(439年-581年)</span>
+                <span class="capital">首都：建康、长安、平城、洛阳、盛乐、江陵</span>
+                <span class="person">代表人物：</span>
+                <span class="story">典故：</span>
+              </div>
+            </li>
+            <li class="right_li">
+              <span class="ic_events png"></span>
+              <p class="txt_events"><strong>隋唐</strong></p>
+              <div class="tab">
+                <span class="time">时间：隋朝(公元581~618年) 唐朝(公元618~907年)  五代十国(公元907~960年)</span>
+                <span class="capital">首都：隋朝（西安、洛阳）唐朝【长安京师、（洛阳东都 太原北都）陪都】</span>
+                <span class="person">代表人物：</span>
+                <span class="story">典故：</span>
+              </div>
+            </li>
+            <li class="left_li">
+              <span class="ic_events"><i class="png"></i></span>
+              <p class="txt_events"><strong>宋</strong></p>
+              <div class="tab">
+                <span class="time">时间：公元960~1279年</span>
+                <span class="capital">首都：东京开封府(今河南开封)、南京应天府（今河南商丘）、行在临安府（今浙江杭州）</span>
+                <span class="person">代表人物：</span>
+                <span class="story">典故：</span>
+              </div>
+            </li>
+            <li class="right_li">
+              <span class="ic_events png"></span>
+              <p class="txt_events"><strong>元</strong></p>
+              <div class="tab">
+                <span class="time">时间：公元1271~1368年</span>
+                <span class="capital">首都：大都</span>
+                <span class="person">代表人物：关汉卿、马致远</span>
+                <span class="story">典故：</span>
+              </div>
+            </li>
+            <li class="left_li">
+              <span class="ic_events"><i class="png"></i></span>
+              <p class="txt_events"><strong>明</strong></p>
+              <div class="tab">
+                <span class="time">时间：公元1368~1644年</span>
+                <span class="capital">首都：顺天府（北京）、应天府（南京）</span>
+                <span class="person">代表人物：</span>
+                <span class="story">典故：</span>
+              </div>
+            </li>
+            <li class="right_li">
+              <span class="ic_events png"></span>
+              <p class="txt_events"><strong>清</strong></p>
+              <div class="tab">
+                <span class="time">时间：公元1636~1911年</span>
+                <span class="capital">首都：北京</span>
+                <span class="person">代表人物：</span>
+                <span class="story">典故：</span>
+              </div>
+            </li>
+            
+
+          </ul>
+          <span class="ic_arr png"></span>
+        </div>
+      </div>
+    </div>
+    
+    <div class="wage_sec" id="wage_sec">
+      <div class="content">
+        <h3 class="tt_bg">朝代歌</h3>
+		<p class="dynasty">
+      <span>夏商与西周，东周分两段；</span>
+      <span>春秋与战国，一统秦两汉；</span>
+      <span>三分魏蜀吴，二晋前后延；</span>
+      <span>南北朝并立，隋唐五代传；</span>
+      <span>宋元明清后，皇朝至此完。</span>
+    </p>
+		
+		<br><br><br>
+		<br><br><br>
+      </div>
+    </div>
+    </div>
+  </div>
+
+<audio id="audios" controls="true" autoplay="autoplay" class="audio" style="display:none;"></audio>
+<script src="js/jquery.min.js"></script>
+<script>
+var url=["",""];
+var num = GetRandomNum(0,url.length-1);   
+document.getElementById("audios").src="http://"+url[num];
+function GetRandomNum(Min,Max)
+{
+var Range = Max - Min;   
+var Rand = Math.random();   
+return(Min + Math.round(Rand * Range));   
+}   
+
+function play(){
+var div = document.getElementById('playbtn'); 
+var obj=document.getElementById("audios");
+if(obj.paused){
+obj.play();
+div.setAttribute("class", "btn_sound"); 
+}else{
+obj.pause();
+div.setAttribute("class", "btn_sound btn_no_sound"); 
+}
+
+}
+
+var strong=$('.txt_events strong')
+var tab=$('.events_sec ul .tab')
+// tab.hide()
+for(var i=0;i<tab.length;i++){
+  strong[i].index=i;
+  strong[i].onmouseover=function(){
+    for(var j=0;j<strong.length;j++){
+      tab[j].style.display='none'
+    }
+    tab[this.index].style.display='block'
+  }
+}
+
+</script>
+<script src="js/canvas-nest.min.js"></script>
+
+</body>
+</html>
